@@ -25,16 +25,8 @@ const registry: Registry[] = [
     }
   },
   {
-    name: "Anthropologie",
-    domain: "https://www.target.com/gift-registry/wedding-registry",
-    icon: {
-      src: "/anthropologie.png",
-      alt: "Anthropologie Logo",
-    }
-  },
-  {
     name: "Crate & Barrel",
-    domain: "https://www.thewedding.com/wedding-registry",
+    domain: "https://www.crateandbarrel.com/gift-registry/rosie-doupnik-and-troy-hancock/r714",
     icon: {
       src: "/crate-and-barrel.png",
       alt: "Crate & Barrel Logo",
@@ -42,10 +34,18 @@ const registry: Registry[] = [
   },
   {
     name: "Pottery Barn",
-    domain: "https://www.thewedding.com/wedding-registry",
+    domain: "https://www.potterybarn.com/registry/grvmpw2d8f/registry-list.html",
     icon: {
       src: "/pottery-barn.svg",
       alt: "The Wedding Logo",
+    }
+  },
+  {
+    name: "Williams-Sonoma",
+    domain: "https://www.williams-sonoma.com/registry/grvmpw2d8f/registry-list.html",
+    icon: {
+      src: "/williams-sonoma.png",
+      alt: "Williams-Sonoma Logo",
     }
   }
 ];
@@ -143,11 +143,8 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="flex-grow w-full flex flex-col justify-top px-4 py-12">
+        <section className="flex-grow w-full flex flex-col justify-top px-4 pb-12">
           
-          <h2 className="text-md font-sans font-regular ">
-            Welcome to our registry!
-          </h2>
           <div className="w-full mt-12 space-y-2">
             {registry.map((item, index) => (
               <Link 
@@ -193,7 +190,7 @@ export default function Home() {
 
         <footer className="w-full py-4 text-xs text-left font-sans px-4 pb-6 text-gray-400">
           <p>
-            ©&nbsp;{new Date().getFullYear()}&nbsp;Troy & Rosie, May 17, 2025 ♡
+            ©&nbsp;{new Date().getFullYear()}&nbsp;Troy & Rosie, Made With ♡
           </p>
         </footer>
       </main>
