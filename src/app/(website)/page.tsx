@@ -26,7 +26,7 @@ const registry: Registry[] = [
   },
   {
     name: "Crate & Barrel",
-    domain: "https://www.crateandbarrel.com/gift-registry/rosie-doupnik-and-troy-hancock/r714",
+    domain: "https://www.crateandbarrel.com/gift-registry/rosie-doupnik-and-troy-hancock/r7146237",
     icon: {
       src: "/crate-and-barrel.png",
       alt: "Crate & Barrel Logo",
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-between w-full align-center">
                   <p className="text-xl font-sans font-bold">{item.name}</p>
-                  <p className="text-sm font-sans font-regular pt-1">View Registry Online</p> 
+                  <p className="text-sm font-sans font-regular pt-1">View Online Registry</p> 
                 </div>
               </Link>
             ))}
@@ -191,7 +191,7 @@ export default function Home() {
 
         <footer className="w-full py-4 text-xs text-left font-sans px-4 md:px-8 pb-6 text-gray-400">
           <p className="container mx-auto">
-            ©&nbsp;{new Date().getFullYear()}&nbsp;Troy & Rosie, Made With ♡
+            ©&nbsp;{new Date().getFullYear()}&nbsp;Made With ♡ by Troy and Rosie
           </p>
         </footer>
       </main>
