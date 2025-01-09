@@ -59,11 +59,11 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimationStarted(true);
-    }, 50);
+    }, 250);
 
     const dateTimer = setTimeout(() => {
       setDateAnimationStarted(true);
-    }, 300);
+    }, 500);
 
     const loadingTimer = setTimeout(() => {
       setLoading(false);
