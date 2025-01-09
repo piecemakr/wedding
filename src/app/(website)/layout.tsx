@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Rosie & Troy, May 17th,2025",
+    title: "Rosie & Troy, May 17th, 2025",
     description: "",
     url: "https://rosieandtroy.com",
     images: [
