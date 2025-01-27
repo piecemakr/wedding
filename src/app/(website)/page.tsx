@@ -183,6 +183,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-between w-full align-center">
                 <p className="text-xl font-sans font-bold">Halliday House</p>
+                <p className="text-sm font-sans font-regular pt-1">In Person Shopping: 10am-5pm | Tues-Sat</p>
                 <p className="text-sm font-sans font-regular pt-1">2 King Street North, Cookstown, Ontario</p>
               </div>
             </Link>
