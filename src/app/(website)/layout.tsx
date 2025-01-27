@@ -1,7 +1,12 @@
-import type { Metadata } from "next";
-import { Bodoni_Moda, Bodoni_Moda_SC } from "next/font/google";
-import "~/styles/globals.css";
-import Lenis from "~/contexts/Lenis";
+import type { Metadata } from "next"
+import { Bodoni_Moda, Bodoni_Moda_SC } from "next/font/google"
+import "~/styles/globals.css"
+
+import Lenis from "~/contexts/Lenis"
+import Vetra from "~/contexts/Vetra"
+
+import Nav from "~/components/elements/nav"
+import Footer from "~/components/elements/footer"
 
 const bodoniModaSc = Bodoni_Moda_SC({
   variable: "--font-bodoni-moda-sc",
@@ -14,7 +19,7 @@ const bodoniModa = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "Rosie & Troy's Wedding, May 17th, 2025", 
+  title: "Rosie & Troy's Wedding, May 17th, 2025",
   description: "Join us on May 17th, 2025 for our wedding in Auburn, California",
   keywords: [
     "Troy and Rosie", 
@@ -24,15 +29,11 @@ export const metadata: Metadata = {
     "Rosie & Troy's Wedding", 
     "Rosie & Troy's Wedding, May 17th, 2025", 
     "wedding", 
-    "wedding planning", 
+    "wedding, California", 
     "wedding website", 
     "wedding websites", 
-    ],
-  
-  authors: [
-    { name: "piecemakr", url: "https://piecemakr.com" }
   ],
-
+  authors: [{ name: "piecemakr", url: "https://piecemakr.com" }],
   openGraph: {
     title: "Rosie & Troy, May 17th, 2025",
     description: "",
@@ -43,26 +44,27 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Troy and Rosie in Carmel, California",
-      }
+      },
     ],
     siteName: "Rosie & Troy's Wedding, May 17th, 2025",
   },
-
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${bodoniModaSc.variable} ${bodoniModa.variable} antialiased`}>
-        <Lenis>{children}</Lenis>
+        <Lenis>
+          <Vetra>
+            <Nav /> 
+            {children}
+            <Footer />
+          </Vetra>
+        </Lenis>
       </body>
     </html>
   );
