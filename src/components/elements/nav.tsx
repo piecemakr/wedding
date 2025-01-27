@@ -56,7 +56,7 @@ export default function Nav() {
       }`}
     >
       <div
-        className={`absolute inset-0 z-0 bg-gradient-to-b from-black/50 to transparent transition-opacity duration-500 ${
+        className={`absolute inset-0 z-0 bg-linear-to-b from-black/50 to transparent transition-opacity duration-500 ${
           isScrolled ? "opacity-0" : "opacity-100"
         }`}
       ></div>

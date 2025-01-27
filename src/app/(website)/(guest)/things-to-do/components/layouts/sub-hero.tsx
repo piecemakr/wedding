@@ -43,7 +43,7 @@ export default function SubHero() {
           className="md:hidden"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
       <div className="absolute -bottom-[8px] md:-bottom-[12px] lg:-bottom-[18px] left-4 right-4 md:left-8 md:right-8 text-white text-4xl md:text-7xl lg:text-9xl font-semibold tracking-[1px]">
         <p className="relative container max-w-[1440px] mx-auto uppercase">
           Things&nbsp;to&nbsp;Do

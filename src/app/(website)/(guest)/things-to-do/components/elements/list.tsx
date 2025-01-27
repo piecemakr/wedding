@@ -71,7 +71,7 @@ export default function RecommendationList({
           placeholder="Search recommendations or tags..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="flex-grow"
+          className="grow"
         />
         <Button onClick={resetFilters} variant="outline" size="sm" disabled={!isFiltered}>
           Reset Filters

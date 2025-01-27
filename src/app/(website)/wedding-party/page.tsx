@@ -45,7 +45,7 @@ export default function Page() {
               className="md:hidden"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
           <div className="absolute -bottom-[8px] md:-bottom-[12px] lg:-bottom-[18px] left-4 right-4 md:left-8 md:right-8 text-white text-5xl md:text-7xl lg:text-9xl font-semibold tracking-[4px]">
             <p className="relative container max-w-[1440px] mx-auto uppercase">
               Party
@@ -53,7 +53,7 @@ export default function Page() {
           </div>
         </div>
 
-        <section className="flex-grow w-full flex flex-col justify-top px-4 md:px-8 pb-12">
+        <section className="grow w-full flex flex-col justify-top px-4 md:px-8 pb-12">
           <div className="container max-w-[1440px] mx-auto w-full mt-12 space-y-2 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4">
             
         

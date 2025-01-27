@@ -29,7 +29,7 @@ export default function Page() {
               className="md:hidden"
             />
           </Parallax>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
         </div>
       </main>
     </>

@@ -32,7 +32,7 @@ export default function PageLoader() {
               <span
                 key={index}
                 className={`inline-block transition-all duration-500 ${
-                  animationStarted ? "opacity-100 blur-none translate-y-0" : "opacity-0 blur-sm translate-y-4"
+                  animationStarted ? "opacity-100 blur-none translate-y-0" : "opacity-0 blur-xs translate-y-4"
                 }`}
                 style={{ transitionDelay: `${index * 25}ms` }}
               >
@@ -42,7 +42,7 @@ export default function PageLoader() {
           </div>
           <div
             className={`text-md md:text-lg transition-all duration-500 font-sans font-bold tracking-[6px] ${
-              dateAnimationStarted ? "opacity-100 blur-none translate-y-0" : "opacity-0 blur-sm translate-y-3"
+              dateAnimationStarted ? "opacity-100 blur-none translate-y-0" : "opacity-0 blur-xs translate-y-3"
             }`}
           >
             MAY 17, 2025
